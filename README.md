@@ -1,21 +1,27 @@
 # jenkins_docker
 
-- Criar um volume local para persistência de dados do Jenkins
+- Criação de um volume local para persistência de dados do Jenkins:
+
 docker volume create jenkins_home
 
-- Verificando o volume criado
+- Verificando o volume criado:
+
 docker volume ls |grep jenkins_home
 
-- Verificando detalhes
+- Verificando detalhes:
+
 docker volume inspect jenkins_home
 
-- Para baixar a versão LTS
+- Baixar a versão LTS do Jenkins:
+
 docker pull jenkins/jenkins:lts
 
-- Subir 
+- Subir o container:
+
 docker-compose up
 
-- Acesse o endereço:
+- Acessando o Jenkins no endereço:
+
 http://127.0.0.1:8080
 
 ![Screenshot](screenshot.png)
