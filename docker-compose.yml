@@ -2,12 +2,15 @@ version: '3.3'
 
 services:
   jenkins:
-    image: jenkins/jenkins:lts
+    build:
+      context: jenkins/
+      args:
+        JENKINS_VERSION: $JENKINS_VERSION
     container_name: jenkins_docker
     # user uid:gid
     user: root
     privileged: true    
-#    restart: always
+    restart: always
     ports:
       - "8080:8080"
       - "50000:50000"
