@@ -4,6 +4,6 @@ FROM jenkins/jenkins:${JENKINS_VERSION}
 
 USER root
 
-RUN apt-get update
+RUN apt update
 
-RUN apt-get install -y maven sudo
+RUN apt install -y maven sudo
