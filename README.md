@@ -19,16 +19,10 @@ $ docker volume ls | grep jenkins_home
 $ docker volume inspect jenkins_home
 ```
 
-**Baixar a versão LTS do Jenkins:**
-
-```shell
-$ docker pull jenkins/jenkins:lts
-```
-
 **Subir o container:**
 
 ```shell
-$ docker-compose up
+$ docker-compose up --build
 ```
 
 **Acessando o Jenkins no endereço:**
