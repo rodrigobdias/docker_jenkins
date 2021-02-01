@@ -6,4 +6,4 @@ USER root
 
 RUN apt-get update
 
-RUN apt-get install -y maven
+RUN apt-get install -y maven sudo
